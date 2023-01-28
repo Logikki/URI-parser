@@ -112,7 +112,7 @@ public class ParserURI {
     private void parseSource (String URIparameter) throws ExceptionMsg {
         String[] parsed = URIparameter.split("[=&]");
         String source = parsed[0];
-        String sourceValue = parsed[0];
+        String sourceValue = parsed[1];
         if (!source.equals("source")) {
             throw new ExceptionMsg("Invald URI source");
         }
